@@ -1,13 +1,14 @@
 name: Базовый код-ревью (по PR)
 
 on:
+  pull_request:
+    types: [opened, synchronize, reopened]
   workflow_dispatch:
     inputs:
       pr_number:
         description: 'Номер Pull Request для проверки'
         required: true
         type: number
-
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
