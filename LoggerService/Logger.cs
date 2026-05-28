@@ -7,13 +7,11 @@ namespace LoggerService {
     private readonly string _logFilePath = "application.log";
 
     private Logger() {
-      string initialMessage = $"=== Логгирование начато {DateTime.Now:yyyy-MM-dd HH:mm:ss} ===";
+      string initialMessage = $"Logging started at {DateTime.Now:yyyy-MM-dd HH:mm:ss}";
       File.WriteAllText(_logFilePath, initialMessage + Environment.NewLine);
     }
 
-    public static Logger Instance {
-      get { return s_instance; }
-    }
+    public static Logger Instance { get; } = s_instance;
 
     public void Log(string message, string level) {
       string formattedTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");

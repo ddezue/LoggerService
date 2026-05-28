@@ -4,14 +4,13 @@ namespace LoggerService {
   public static class Program {
     public static void Main() {
       Logger applicationLogger = Logger.Instance;
-      applicationLogger.Info("Приложение успешно запущено");
-      applicationLogger.Warning("Обнаружена устаревшая версия конфигурационного файла");
-      applicationLogger.Error("Не удалось установить соединение с базой данных");
+      applicationLogger.Info("Application started successfully");
+      applicationLogger.Warning("Obsolete version of configuration file detected");
+      applicationLogger.Error("Failed to establish database connection");
 
       bool isSameInstance = applicationLogger == Logger.Instance;
-
       Console.WriteLine();
-      Console.WriteLine($"Один и тот же экземпляр: {isSameInstance}");
+      Console.WriteLine($"Is the same instance: {isSameInstance}");
     }
   }
 }
