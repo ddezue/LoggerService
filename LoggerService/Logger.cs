@@ -4,7 +4,7 @@ using System.IO;
 namespace LoggerService {
   public sealed class Logger {
     private static readonly Logger s_instance = new Logger();
-    private readonly string _logFilePath = "application.log";
+    private readonly string _logFilePath = @"C:\Users\dezue\Desktop\application.log";
 
     private Logger() {
       string initialMessage = $"Logging started at {DateTime.Now:yyyy-MM-dd HH:mm:ss}";
