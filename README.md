@@ -25,4 +25,4 @@
 - Статическое свойство `Instance` - единственный способ получить логгер
 - Методы `Info()`, `Warning()`, `Error()` - запись логов в консоль и файл
 
-[Видео-отчет](https://drive.google.com/file/d/1PSTIxC1tMDdtjG3h_tMSgnfw6eRYpckm/view?usp=sharing)
+[Видео-отчет](https://drive.google.com/file/d/1PSTIxC1tMDdtjG3h_tMSgnfw6eRYpckm/view?usp=sharing) (не скидывайте в оффтоп пж)
